@@ -1,6 +1,6 @@
 {
   "name": "node-ts-starter-project",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Starter project to build a node/typescript app",
   "main": "src/index.ts",
   "scripts": {
