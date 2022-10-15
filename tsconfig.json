@@ -4,11 +4,9 @@
     "lib": ["es6","dom"],
     "module": "commonjs",
     "rootDir": "./",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": [ "./*" ]
     },
     // "removeComments": true,
     // "noEmitOnError": true,

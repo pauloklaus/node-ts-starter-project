@@ -9,16 +9,38 @@ Based on the book by [Basarat](https://basarat.gitbook.io/typescript/).
 ### Install TypeScript
 
 ```sh
-npm install -D typescript @types/node nodemon ts-node
+npm install -D typescript @types/node nodemon ts-node tsconfig-paths
 ```
 
 ### Init TypeScript basic config file
 
 ```sh
-npx tsc --init --rootDir src --outDir dist --esModuleInterop --resolveJsonModule --lib es6,dom  --module commonjs
+npx tsc --init --rootDir ./ --outDir dist --esModuleInterop --resolveJsonModule --lib es6,dom  --module commonjs
 ```
 
 Source: [https://aka.ms/tsconfig]
+
+Set path alias:
+
+```json
+{
+  "rootDir": "./",
+  "baseUrl": "./src",
+  "paths": {
+    "@/*": [ "./*" ]
+  }
+}
+```
+
+In the [package.json](package.json), set nodemon parameters to fix path alias at compile time:
+
+```json
+{
+  "scripts": {
+    "build:live": "nodemon -r tsconfig-paths/register --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts",
+  }
+}
+```
 
 ### Install jest
 
