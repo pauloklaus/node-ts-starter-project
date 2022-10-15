@@ -20,7 +20,7 @@ npx tsc --init --rootDir ./ --outDir dist --esModuleInterop --resolveJsonModule 
 
 Source: [https://aka.ms/tsconfig]
 
-Set path alias:
+Set path alias in [tsconfig.json](tsconfig.json):
 
 ```json
 {
