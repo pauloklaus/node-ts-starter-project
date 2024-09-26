@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["es6","dom"],
+    "lib": ["ESNext", "dom"],
     "module": "commonjs",
     "rootDir": "./",
     "baseUrl": "./src",
     "paths": {
-      "@/*": [ "./*" ]
+      "@/*": ["./*"]
     },
     "resolveJsonModule": true,
     "declaration": true,
@@ -17,11 +17,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude":[
-    "./test/**/*.spec.ts",
-    "./node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["./test/**/*.spec.ts", "./node_modules"]
 }
