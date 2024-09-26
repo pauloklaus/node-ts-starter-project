@@ -151,7 +151,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   rules:  {
-    // Overwrite rules specified from the extended configs e.g. 
+    // Overwrite rules specified from the extended configs e.g.
     // "@typescript-eslint/explicit-function-return-type": "off",
   }
 }
