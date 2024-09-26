@@ -9,7 +9,7 @@ let pgConnection: PostgresConnection | undefined;
 
 export function postgresInstance(logger: Logger): DbHandler {
   if (!pgConnection) {
-    const { dbHost, dbName, dbUser, dbPassword, dbPgPoolSize } = envSettings();
+    const { dbHost, dbName, dbUser, dbPassword, dbPoolSize } = envSettings();
 
     pgConnection = {
       pool: new pg.Pool({
@@ -17,7 +17,7 @@ export function postgresInstance(logger: Logger): DbHandler {
         database: dbName,
         user: dbUser,
         password: dbPassword,
-        max: dbPgPoolSize,
+        max: dbPoolSize,
         keepAlive: true,
         keepAliveInitialDelayMillis: 60000,
       }),
