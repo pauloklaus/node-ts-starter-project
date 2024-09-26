@@ -1,3 +1,8 @@
-import { main } from "@/app/main";
+import { envSettings } from "@/helpers";
+import { server } from "./server";
 
-console.log(main());
+const { serverPort } = envSettings();
+
+server.listen(serverPort, () => {
+  console.log(`Server is listening on ${serverPort}`);
+});
