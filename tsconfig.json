@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "ESNext",
     "lib": ["es6","dom"],
     "module": "commonjs",
     "rootDir": "./",
@@ -8,14 +8,6 @@
     "paths": {
       "@/*": [ "./*" ]
     },
-    // "removeComments": true,
-    // "noEmitOnError": true,
-    // "noImplicitAny": true,
-    // "sourceMap": true,
-    // "typeRoots": [
-    //   "./src/@types",
-    //   "./node_modules/@types",
-    // ],
     "resolveJsonModule": true,
     "declaration": true,
     "declarationMap": true,

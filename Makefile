@@ -1,4 +1,4 @@
-DOCKER_BIN=docker run -it --rm -v ${PWD}:/project -w /project node:16-alpine
+DOCKER_BIN=docker run -it --rm -v ${PWD}:/project -w /project node:20-alpine
 
 help:
 	@echo "make help|install|audit|test|test:watch|prettier:check|prettier:write|start"
