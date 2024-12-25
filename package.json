@@ -59,7 +59,7 @@
     "express-rate-limit": "^7.4.0",
     "helmet": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
-    "nanoid": "^5.0.7",
+    "nanoid": "^5.0.9",
     "pg": "^8.13.0",
     "validator": "^13.12.0"
   }
